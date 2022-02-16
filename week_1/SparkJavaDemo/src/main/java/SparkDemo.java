@@ -10,6 +10,7 @@ public class SparkDemo {
 
     public static void main(String[] args) {
 
+        // setup server port
         port(1102);
 
         // post method request
