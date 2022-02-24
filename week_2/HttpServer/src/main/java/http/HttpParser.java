@@ -9,15 +9,13 @@ import java.io.InputStreamReader;
 @Slf4j
 public class HttpParser {
 
-    public static RequestInfo parse (InputStream inputStream) throws IOException {
+    public static RequestInfo parse (BufferedReader bufferedReader) throws IOException {
 
-        final int LF = 10; // \r
-        final int CR = 13; // \n
+        final int LF = 10; // \n
+        final int CR = 13; // \r
         final int SP = 32; // space
 
         RequestInfo request = new RequestInfo();
-
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
         StringBuilder stringBuilder = new StringBuilder();
 
         // get method and path

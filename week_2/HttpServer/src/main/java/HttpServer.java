@@ -1,21 +1,25 @@
-import common.Router;
+
 import controllers.Base64;
 import lombok.extern.slf4j.Slf4j;
 import socket.SocketListener;
 
+import java.io.IOException;
+
 @Slf4j
 public class HttpServer {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         // setup path
         Base64 b64 = new Base64();
         b64.addToRouter();
 
-        log.info("" + Router.getInstance().size());
+        Client client = new Client();
+        client.start();
 
         SocketListener socketListener = new SocketListener(8080);
         socketListener.run();
+
     }
 
 }
