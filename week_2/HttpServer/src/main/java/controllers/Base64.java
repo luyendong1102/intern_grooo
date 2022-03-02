@@ -1,29 +1,29 @@
 package controllers;
 
 import com.google.gson.Gson;
+import common.HtmlParser;
 import common.Router;
 import entities.Message;
 import http.RequestInfo;
 import lombok.extern.slf4j.Slf4j;
+
+import java.io.FileNotFoundException;
 
 @Slf4j
 public class Base64 implements Controller{
 
     // POST "/"
     private String base64encode (RequestInfo request) {
-        log.info(request.getContent());
-        Gson gson = new Gson();
-        Message message = gson.fromJson(request.getContent(), Message.class);
-        return java.util.Base64.getEncoder().encodeToString(message.getBase64().getBytes());
+//        log.info(request.getContent());
+//        Gson gson = new Gson();
+//        Message message = gson.fromJson(request.getContent(), Message.class);
+        return request.getContent();
     }
 
     // GET "/"
-    private String hello (RequestInfo request) {
-        return  "<html>" +
-                "<body>" +
-                "<h1>hElL0 hUM4n</h1>" +
-                "</body>" +
-                "</html>";
+    // handle login of user
+    private String hello (RequestInfo request) throws FileNotFoundException {
+        return HtmlParser.parse("index");
     }
 
     @Override
