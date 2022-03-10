@@ -1,0 +1,131 @@
+MSG1 
+Sequence
+    Integer(1)
+    Sequence
+        Sequence
+            ObjectIdentifier(2.16.840.1.101.3.4.2.1)
+            NULL
+        DER Octet String[32] 
+    Boolean(true)
+
+SEQUENCE : 
+INTERGER : 1
+SEQUENCE : 
+SEQUENCE : 
+OID : 2.16.840.1.101.3.4.2.1
+NULL : NULL
+DER OCTETSTRING : #cd868fabd02aa656ed997ab62a2727598e885bb57a8ea9e7bf77728eb1bf90a0
+BOOLEAN : TRUE
+
+MSG2 
+Sequence
+    Sequence
+        Sequence
+            Sequence
+                Sequence
+                    Sequence
+                        ObjectIdentifier(1.3.14.3.2.26)
+                        NULL
+                    DER Octet String[20] 
+                    DER Octet String[20] 
+                    Integer(160930661202317917819785)
+
+SEQUENCE : 
+SEQUENCE : 
+SEQUENCE : 
+SEQUENCE : 
+SEQUENCE : 
+SEQUENCE : 
+OID : 1.3.14.3.2.26
+NULL : NULL
+DER OCTETSTRING : #41cb3849a7f8c12ca77981727cb9b1fccbf83b6c
+DER OCTETSTRING : #2e2efd4814fae891284c06cf56791724c6db2ff5
+INTERGER : 160930661202317917819785
+
+MSG3 
+Sequence
+    Sequence
+        Tagged [CONTEXT 0]
+            Integer(2)
+        Integer(160930661202273622307192)
+        Sequence
+            ObjectIdentifier(1.2.840.113549.1.1.11)
+            NULL
+        Sequence
+            Set
+                Sequence
+                    ObjectIdentifier(2.5.4.3)
+                    UTF8String() 
+        Sequence
+            UTCTime(220214093623GMT+00:00) 
+            UTCTime(220218011223GMT+00:00) 
+        Sequence
+            Set
+                Sequence
+                    ObjectIdentifier(2.5.4.3)
+                    UTF8String() 
+        Sequence
+            Sequence
+                ObjectIdentifier(1.2.840.113549.1.1.1)
+                NULL
+            DER Bit String[140, 0] 
+        Tagged [CONTEXT 3]
+            Sequence
+                Sequence
+                    ObjectIdentifier(2.5.29.15)
+                    DER Octet String[4] 
+                Sequence
+                    ObjectIdentifier(2.5.29.37)
+                    Boolean(true)
+                    DER Octet String[12] 
+                Sequence
+                    ObjectIdentifier(2.5.29.19)
+                    DER Octet String[2] 
+    Sequence
+        ObjectIdentifier(1.2.840.113549.1.1.11)
+        NULL
+    DER Bit String[128, 0] 
+
+SEQUENCE : 
+SEQUENCE : 
+TAGGED : #no 0
+INTERGER : 2
+INTERGER : 160930661202273622307192
+SEQUENCE : 
+OID : 1.2.840.113549.1.1.11
+NULL : NULL
+SEQUENCE : 
+SET : 
+SEQUENCE : 
+OID : 2.5.4.3
+UTF8 : 
+SEQUENCE : 
+UTC TIME : 220214093623Z
+UTC TIME : 220218011223Z
+SEQUENCE : 
+SET : 
+SEQUENCE : 
+OID : 2.5.4.3
+UTF8 : 
+SEQUENCE : 
+SEQUENCE : 
+OID : 1.2.840.113549.1.1.1
+NULL : NULL
+DER BITSTRING : #03818D0030818902818100B38765E5DB73DBA649082420006BF6F1F5B0A7CFCB8B4F7A885907804E9723059885F7B7ACC546D9534780C3EE6DE6F32088BFB7F3930584AF11EF0FFD70035CED67CBEFEB2F4044820B06714853A7270B7932AF31D500754AAD2E458FFCA2DBAD6BF6F764C7D77867F4A0DAB82FE468F974AA980DDED01561F845FBA6774F810203010001
+TAGGED : #no 3
+SEQUENCE : 
+SEQUENCE : 
+OID : 2.5.29.15
+DER OCTETSTRING : #03020780
+SEQUENCE : 
+OID : 2.5.29.37
+BOOLEAN : TRUE
+DER OCTETSTRING : #300a06082b06010505070308
+SEQUENCE : 
+OID : 2.5.29.19
+DER OCTETSTRING : #3000
+SEQUENCE : 
+OID : 1.2.840.113549.1.1.11
+NULL : NULL
+DER BITSTRING : #038181008B2849770475DCE9C9EF14CB8BFD3F2EA4F2C09E83A47101DFAB0EF48EA43CD28AC0185BC27D61612572645F0513D2D6B2C6A90712E85CD59C5EB37E87A3633AFAC28A7FCDFE33CF79A7C71E00B33D9FD7299BEF0C174BD5483249C2178AA95B209B04F4BE7CD9BF0E0C48DCFBAB8CFAD005D9337B1899A68E7CD87305F87921
+

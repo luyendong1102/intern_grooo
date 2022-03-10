@@ -23,7 +23,13 @@
         </dependency>
 
         <!-- bouncycastle-->
-
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>asn</artifactId>
+            <version>1.5</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/bcprov-jdk15on-170.jar</systemPath>
+        </dependency>
     </dependencies>
 
 </project>
