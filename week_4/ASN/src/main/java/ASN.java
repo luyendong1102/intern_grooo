@@ -1,4 +1,3 @@
-
 import org.bouncycastle.asn1.*;
 import org.bouncycastle.asn1.util.ASN1Dump;
 import org.bouncycastle.asn1.util.DERDump;
@@ -22,9 +21,6 @@ public class ASN {
         ASN1Sequence sequence3 = ASN1Sequence.getInstance(sequence2.getObjectAt(0));
         ASN1ObjectIdentifier objectIdentifier = ASN1ObjectIdentifier.getInstance(sequence3.getObjectAt(0));
         System.out.println(objectIdentifier.getId());
-
-        //
-        DEROctetString octetString = DEROctetString.getInstance()
 
     }
 }
